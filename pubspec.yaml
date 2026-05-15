@@ -9,10 +9,10 @@ environment:
   # flutter: ">=3.0.0"
 
 dependencies:
-  device_info_plus: ^13.1.0 ## active (fluttercommunity.dev)
+  device_info_plus: ^11.1.1 ## active (fluttercommunity.dev)
   flutter:
     sdk: flutter
-  package_info_plus: ^10.1.0 ## active (fluttercommunity.dev)
+  package_info_plus: ^8.0.2 ## active (fluttercommunity.dev)
   web: ^1.1.1
 
 dev_dependencies:
