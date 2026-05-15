@@ -5,14 +5,14 @@ repository: https://github.com/AcmeSoftwareLLC/device_user_agent
 homepage: https://acmesoftware.com
 
 environment:
-  sdk: '>=3.3.4 <4.0.0'
-  flutter: '>=3.19.0'
+  sdk: ">=3.9.2 <4.0.0"
+  # flutter: ">=3.0.0"
 
 dependencies:
-  device_info_plus: ^12.1.0
+  device_info_plus: ^13.1.0 ## active (fluttercommunity.dev)
   flutter:
     sdk: flutter
-  package_info_plus: ^9.0.0
+  package_info_plus: ^10.1.0 ## active (fluttercommunity.dev)
   web: ^1.1.1
 
 dev_dependencies:
