@@ -26,4 +26,9 @@ class AndroidAgentInfo extends PlatformAgentInfo<AndroidDeviceInfo> {
   Future<String> get osVersion {
     return select((s) => s.device.version.sdkInt.toString());
   }
+
+  @override
+  Future<String> get architecture {
+    return select((s) => s.device.supportedAbis.firstOrNull ?? '');
+  }
 }

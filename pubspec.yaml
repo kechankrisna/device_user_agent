@@ -12,6 +12,7 @@ dependencies:
   device_info_plus: ^11.1.1 ## active (fluttercommunity.dev)
   flutter:
     sdk: flutter
+  meta: ^1.15.0
   package_info_plus: ^8.0.2 ## active (fluttercommunity.dev)
   web: ^1.1.1
 

@@ -10,7 +10,7 @@ import 'agents/android_agent_info.dart';
 import 'agents/ios_agent_info.dart';
 
 /// A class that provides user agent information like device & package information.
-final class AgentInfo {
+class AgentInfo {
   /// Creates a new instance of [AgentInfo].
   const AgentInfo();
 
@@ -57,4 +57,7 @@ final class AgentInfo {
 
   /// The version of the operating system. (e.g., '17.1.5')
   Future<String> get osVersion => _platformAgentInfo.osVersion;
+
+  /// The CPU architecture of the device. (e.g., 'arm64-v8a', 'arm64', 'x86_64')
+  Future<String> get architecture => _platformAgentInfo.architecture;
 }

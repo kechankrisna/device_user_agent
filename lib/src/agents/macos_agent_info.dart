@@ -26,4 +26,7 @@ class MacosAgentInfo extends PlatformAgentInfo<MacOsDeviceInfo> {
   Future<String> get osVersion {
     return select((s) => s.device.osRelease);
   }
+
+  @override
+  Future<String> get architecture => select((s) => s.device.arch);
 }

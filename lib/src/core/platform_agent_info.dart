@@ -79,4 +79,7 @@ abstract class PlatformAgentInfo<I extends BaseDeviceInfo> {
 
   /// The model of the device. (e.g., '15,4')
   Future<String> get deviceModel;
+
+  /// The CPU architecture of the device. (e.g., 'arm64-v8a', 'arm64')
+  Future<String> get architecture;
 }

@@ -26,4 +26,9 @@ class IosAgentInfo extends PlatformAgentInfo<IosDeviceInfo> {
   Future<String> get osVersion {
     return select((s) => s.device.systemVersion);
   }
+
+  // utsname.machine returns an arch string on simulators ("arm64", "x86_64")
+  // and a hardware model ID on physical devices ("iPhone16,1").
+  @override
+  Future<String> get architecture => select((s) => s.device.utsname.machine);
 }

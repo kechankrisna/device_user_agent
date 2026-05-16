@@ -26,4 +26,7 @@ class LinuxAgentInfo extends PlatformAgentInfo<LinuxDeviceInfo> {
   Future<String> get osVersion {
     return select((s) => s.device.versionId ?? '0');
   }
+
+  @override
+  Future<String> get architecture => Future.value('x86_64');
 }
